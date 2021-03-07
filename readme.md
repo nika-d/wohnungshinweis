@@ -11,6 +11,8 @@ Wenn ich diesen Hinweis höre, weiß ich, jetzt sollte ich mal auf die Wohnungsb
 
 Nachteil: Die App arbeitet mit Screenshots. D.h. so lange die App läuft und nach neuen Wohnungsangeboten sucht, kannst du deinen Bildschirm, und somit deinen Rechner nicht verwenden. (Bzw. du kannst schon, aber die App wird immer wieder Safari in den Vordergrund schieben.)
 
+Ich habe das Tool für mich selbst erstellt - keine Garantie, dass es für Dich auch funktioniert. 
+
 ## Wie benutzt man das? 
 
 Erst unten bei den System-Voraussetzungen gucken, obs für Dich überhaupt geeignet ist.
