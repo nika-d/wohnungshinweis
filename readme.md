@@ -58,3 +58,9 @@ Bitte gehe alle Apps und Workflows ein mal gründlich in Automator durch, und ü
 ## ImageMagick ist cool! 
 
 Um zu erkennen, ob ein neues Angebot da ist, vergleicht ein Script einen früheren Screenshot mit einem neueren. Nutze ich in einem Script ImageMagick, super gute, Apache 2 lizenzierte CLI tools für Bilder: https://imagemagick.org , https://github.com/ImageMagick . 
+
+## Fragen, Anregungen, Kritik und Lob
+
+... gern an nika . domanska ät posteo . de 
+
+😸
