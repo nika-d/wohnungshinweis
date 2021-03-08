@@ -1,0 +1,36 @@
+#!/bin/bash
+
+SIMILARITY_IMMO=$(compare -metric PSNR ~/Desktop/automator/immoScoutPrevious.png ~/Desktop/automator/immoScout.png ~/Desktop/automator/diff.png 2>&1)
+
+if [[ $SIMILARITY_IMMO < '30' ]] 
+then
+    say Immo Scout
+    exit 1
+fi
+
+SIMILARITY_EBAY=$(compare -metric PSNR ~/Desktop/automator/ebayPrevious.png ~/Desktop/automator/ebay.png ~/Desktop/automator/diff.png 2>&1)
+
+SIMILARITY_EBAY_PRE=$(compare -metric PSNR ~/Desktop/automator/ebayPreviousPre.png ~/Desktop/automator/ebay.png ~/Desktop/automator/diff.png 2>&1)
+
+if [[ $SIMILARITY_EBAY < '30' ]] && [[ $SIMILARITY_EBAY_PRE < '30' ]]
+    then
+        say ebay
+        exit 1
+    fi
+fi
+
+SIMILARITY_IMMO_WELT=$(compare -metric PSNR ~/Desktop/automator/immoWeltPrevious.png ~/Desktop/automator/immoWelt.png ~/Desktop/automator/diff.png 2>&1)
+
+if [[ $SIMILARITY_IMMO_WELT < '30' ]] 
+then
+    say Welten
+    exit 1
+fi
+
+SIMILARITY_IMMO_NET=$(compare -metric PSNR ~/Desktop/automator/immoNetPrevious.png ~/Desktop/automator/immoNet.png ~/Desktop/automator/diff.png 2>&1)
+
+if [[ $SIMILARITY_IMMO_NET < '25' ]] 
+then
+    say Netze
+    exit 1
+fi
